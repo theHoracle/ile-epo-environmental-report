@@ -17,7 +17,7 @@ All local assets use relative paths, so the page works at a GitHub Pages reposit
 
 ## Add YouTube videos
 
-Open `script.js` and fill the three `id` values at the top with your YouTube video IDs. For example, in `https://www.youtube.com/watch?v=abcdefghijk`, the ID is `abcdefghijk`. The corresponding placeholder automatically becomes a lazy-loaded, privacy-enhanced YouTube embed. Update each title in `script.js` and its visible heading and description in `index.html` to match the footage. No videos or interview responses have been invented.
+Open `script.js` and update the `id` value at the top with your YouTube video ID. For example, in `https://www.youtube.com/watch?v=abcdefghijk`, the ID is `abcdefghijk`. The video slot automatically becomes a lazy-loaded, privacy-enhanced YouTube embed. Update each title in `script.js` and its visible heading and description in `index.html` to match the footage. No videos or interview responses have been invented.
 
 ## Edit the report
 

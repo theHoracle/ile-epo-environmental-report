@@ -2,8 +2,6 @@
 // For https://www.youtube.com/watch?v=abcdefghijk, the ID is abcdefghijk.
 const videos = [
   { id: 'm_q_kArylq8', title: 'A closer look at the market' },
-  { id: '', title: 'Conversations in the community' },
-  { id: '', title: 'The sanitation conversation' },
 ];
 
 videos.forEach((video, index) => {
