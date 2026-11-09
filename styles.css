@@ -45,3 +45,33 @@
   .hero { padding: 30px 0 0; background: none; color: var(--ink); }
   .hero h1 em, .hero .eyebrow, .hero-bottom p, .hero .story-meta, .hero .story-meta span:first-child { color: var(--ink); }
 }
+
+/* Project team page and the link beneath its photograph. */
+.team-profile-link { display: flex; align-items: center; justify-content: space-between; width: fit-content; gap: 28px; margin-top: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--green); color: var(--green); font-size: 12px; font-weight: 600; }
+.team-profile-link:hover, .team-return:hover { color: #6b7c43; }
+.team-hero { display: grid; position: relative; margin-top: 32px; isolation: isolate; }
+.team-hero > img { grid-area: 1 / 1; }
+.team-hero::after { content: ''; grid-area: 1 / 1; background: linear-gradient(0deg, rgba(9,24,18,.9), transparent 48%); z-index: 1; pointer-events: none; }
+.team-hero-caption { grid-area: 1 / 1; align-self: end; padding: 36px 44px; color: #fffdf5; z-index: 2; }
+.team-hero-caption .eyebrow { color: #d1dfa9; }
+.team-hero h1 { font-size: clamp(42px,5.5vw,76px); margin: 10px 0 0; }
+.team-roster { max-width: 1120px; padding-block: 64px 72px; }
+.team-roster .eyebrow { color: var(--green); }
+.member-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 56px; list-style: none; padding: 0; margin: 0; }
+.member-list li { display: flex; align-items: start; gap: 22px; border-top: 1px solid var(--line); padding: 25px 0; break-inside: avoid; }
+.member-number { color: #71844f; font-size: 11px; line-height: 2.2; }
+.member-list h3 { font: 400 26px/1.2 var(--serif); margin: 0 0 9px; }
+.member-list p { font-size: 11px; letter-spacing: 1px; color: var(--muted); margin: 0; }
+.team-return { display: inline-flex; gap: 20px; font-size: 12px; margin-top: 32px; padding-bottom: 9px; border-bottom: 1px solid var(--line); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 640px) {
+  .team-hero { margin-top: 20px; }
+  .team-hero-caption { padding: 16px; }
+  .team-hero h1 { font-size: clamp(30px,8vw,42px); margin-top: 6px; letter-spacing: -.7px; }
+  .team-hero-caption .eyebrow { font-size: 8px; }
+  .team-hero::after { background: linear-gradient(0deg,rgba(9,24,18,.92),transparent 60%); }
+  .team-roster { padding-block: 40px 48px; }
+  .member-list { grid-template-columns: minmax(0,1fr); }
+  .member-list li { padding-block: 22px; gap: 18px; }
+  .member-list h3 { font-size: 26px; }
+}
